@@ -24,100 +24,135 @@ body {
 
 /* MOBILE 320px */
 @media only screen and (max-width: 320px) {
+  /*
   .container__index {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 120px 120px 220px 1.3fr 500px;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "container__header" "container__intro" "container__carousel" "container__article" "container__foot";
+    grid-template-areas:
+      "container__header"
+      "container__intro"
+      "container__carousel"
+      "container__article"
+      "container__foot";
     width: 23.2%;
-    height: 90%; }
-  .container__header {
+    height: 90%;
+  }
+  
+  .container__header { 
     height: 100px;
     grid-area: container__header; }
-  .container__intro {
+  
+  .container__intro { 
     font-family: 'Averia Serif Libre', cursive;
     width: 100vw;
     height: 20px;
-    grid-area: container__intro; }
-    .container__intro .lineaDivisora {
-      display: block;
+    grid-area: container__intro;
+    .lineaDivisora{
+      display:block;
       width: 100vw;
       height: 20px;
       padding-left: 55px;
       padding-top: 0;
-      padding-bottom: 0; }
-  .container__carousel {
+      padding-bottom: 0;
+    }
+  }
+  .container__carousel { 
     width: 100vw;
-    grid-area: container__carousel; }
-    .container__carousel .lineaDivisora {
-      display: block;
+    grid-area: container__carousel;
+    .lineaDivisora{
+      display:block;
       width: 100vw;
       height: 30px;
       padding-left: 55px;
       padding-top: 10px;
-      padding-bottom: 0px; }
+      padding-bottom: 0px;
+    }  
+  }
   .carousel-caption p {
-    font-size: 25px !important; }
-  .container__article {
-    grid-area: container__article; }
-    .container__article section video {
-      width: 100vw;
-      margin-top: 40px;
-      border-radius: 1rem;
-      display: flex; }
-    .container__article section em {
-      font-size: 1.5vh;
-      align-items: start;
-      display: flex;
-      padding: 20px;
-      margin-right: 3vh; }
-    .container__article section h2 {
-      font-size: 3vh;
-      align-items: center;
-      display: flex;
-      margin-left: 5rem; }
-    .container__article section h3 {
-      font-size: 1.5vh;
-      align-items: start;
-      display: flex;
-      padding-top: 10px; }
-    .container__article section p {
-      font-size: 2.5vh;
-      align-items: center;
-      display: flex;
-      margin-left: 1rem;
-      text-decoration: underline; }
-    .container__article section .recomendables__contenedor {
-      display: flex;
-      flex-direction: column; }
-      .container__article section .recomendables__contenedor .recomendables__tarjeta {
-        margin-left: 1px;
-        width: 100vw; }
-    .container__article section .lineaDivisora {
-      display: block;
-      width: 100vw;
-      height: 25px;
-      margin: auto;
-      padding-left: 35px;
-      padding-top: 0;
-      padding-bottom: 0; }
+    font-size: 25px !important;
+  }
+  .container__article { 
+    grid-area: container__article;
+      section{
+        video{
+          width: 100vw;
+          margin-top: 40px;
+          border-radius: 1rem;
+          display: flex;
+        }
+        em{
+          font-size: 1.5vh;
+          align-items: start;
+          display: flex;
+          padding: 20px;
+          margin-right: 3vh;
+        }
+        h2{
+          font-size: 3vh;
+          align-items: center;
+          display: flex;
+          margin-left: 5rem;
+        }
+        h3{
+          font-size: 1.5vh;
+          align-items: start;
+          display: flex;
+          padding-top: 10px;
+        }
+        p{
+          font-size: 2.5vh;
+          align-items: center;
+          display: flex;
+          margin-left: 1rem;
+          text-decoration: underline;
+        }
+        .recomendables__contenedor{
+          display: flex;
+          flex-direction: column;
+
+          .recomendables__tarjeta{
+            margin-left: 1px;
+            width: 100vw;
+          }
+        }
+        .lineaDivisora{
+          display:block;
+          width: 100vw;
+          height: 25px;
+          margin: auto;
+          padding-left: 35px;
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+      }
+  }
+
+
   .container__foot {
     width: 100vw;
     height: 36rem;
     padding-top: 5rem;
     padding-bottom: 0;
     grid-area: container__foot; }
-  .social-media {
+
+  .social-media{
     position: relative;
     display: flex;
     justify-content: space-around;
-    padding-top: 20px; }
-  .social-media a {
+    padding-top: 20px;}
+    
+  .social-media a{
     width: 0.02vw;
     margin-left: 0.01vw;
-    padding-left: 1vw; }
+    padding-left: 1vw;
+   }
+*/ }
+
+/*mobile 480px */
+@media only screen and (max-width: 480px) {
   /*RECETAS*/
   .recetas__container {
     display: grid;
@@ -126,8 +161,8 @@ body {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "headerRecetas" "mainRecetas" "footRecetas";
-    width: 320px;
-    height: 1000px; }
+    width: 100vw;
+    height: 1700px; }
   .recetas__header {
     grid-area: headerRecetas; }
   .recetas__footer {
@@ -144,7 +179,7 @@ body {
     height: 800px; }
   .recetas__footer footer {
     width: 100vw;
-    height: 450px; }
+    height: 700px; }
   .recetas__main {
     display: grid;
     grid-template-columns: 1fr;
@@ -259,14 +294,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start; } }
-
-/*mobile 480px */
-@media only screen and (max-width: 480px) {
+    align-items: flex-start; }
   .container__index {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 120px 270px 2000px 860px;
+    grid-template-rows: 100px 120px 270px 2200px 860px;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "container__header" "container__intro" "container__carousel" "container__article" "container__foot";
@@ -309,7 +341,7 @@ body {
       border-radius: 1rem;
       display: flex; }
     .container__article section em {
-      font-size: 1.5vh;
+      font-size: 2.6vh;
       align-items: start;
       display: flex;
       padding: 20px;
