@@ -121,6 +121,49 @@ body {
 
 /*mobile 480px */
 @media only screen and (max-width: 480px) {
+  /*VIDEO*/
+  .container__video {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100px 150px 1800px 700px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "video__header" "video__intro" "video__main" "video__footer"; }
+  .video__header {
+    width: 100vw;
+    grid-area: video__header; }
+  .video__intro {
+    font-family: 'Averia Serif Libre', cursive;
+    grid-area: video__intro; }
+    .video__intro h2 {
+      padding-top: 30px;
+      font-size: 5vh;
+      text-decoration: underline; }
+    .video__intro em {
+      font-size: 2vh;
+      align-items: start;
+      display: flex;
+      padding-top: 30px; }
+  .video__main {
+    width: 100vw;
+    grid-area: video__main; }
+    .video__main main {
+      padding-top: 55px; }
+      .video__main main img {
+        width: 50vw;
+        padding-right: 10px;
+        padding-top: 20px; }
+      .video__main main iframe {
+        width: 100%;
+        height: 30vh;
+        padding-left: 5px; }
+      .video__main main .video__title {
+        font-size: 3vh;
+        padding-top: 63px; }
+  .video__footer {
+    grid-area: video__footer; }
+    .video__footer footer {
+      height: 700px; }
   /*RECETAS*/
   .recetas__container {
     display: grid;
@@ -1092,7 +1135,7 @@ footer {
   .d-md-block {
     display: block !important; } }
 
-@media (min-width: 690px) {
+@media only screen and (min-width: 690px) {
   .container__index {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
