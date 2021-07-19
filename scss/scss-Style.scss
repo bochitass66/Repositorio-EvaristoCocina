@@ -269,7 +269,7 @@ body {
       grid-auto-flow: row;
       grid-template-areas: "logoPie whatsapp facebook youtube instagram twitter";
       grid-area: footRecetas;
-      top: 650px;
+      top: 950px;
       position: relative; }
     footer {
       height: 800px; }
@@ -280,7 +280,7 @@ body {
     .recetas__main {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr;
       gap: 0px 0px;
       grid-auto-flow: row;
       grid-template-areas: "titulo"
@@ -288,7 +288,8 @@ body {
                            "segunda"
                            "tercera"
                            "cuarta"
-                           "quinta";
+                           "quinta"
+                           "sexta";
       grid-area: mainRecetas; }
     .recetas__main .recetas__articulo .lineaDivisora-resp{
       width: 300px;
@@ -310,6 +311,8 @@ body {
       grid-area: cuarta; }
     .recetas__quinta {
       grid-area: quinta; }
+    .recetas__sexta {
+      grid-area: sexta; }
   
   
     .recetas__main {
@@ -427,6 +430,29 @@ body {
         @extend .recetas__primera;
   
         & .recetas__texto-5{
+          @extend .recetas__texto-1;
+        }
+  
+        & img {
+            width: 100%;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            transition: all 1s ease;
+        }
+  
+      &:hover{
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+        -webkit-filter: brightness(70%);
+        filter: brightness(70%);
+      }  
+  
+      }
+      & .recetas__sexta{
+        @extend .recetas__primera;
+  
+        & .recetas__texto-6{
           @extend .recetas__texto-1;
         }
   
@@ -1330,6 +1356,75 @@ footer {
     display: block !important; } }
 
 @media only screen and (min-width: 690px) {
+
+  .recetas__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 270px 1000px 420px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "recetas__header recetas__header"
+      "recetas__main recetas__main"
+      "recetas__footer recetas__footer";
+  }
+  
+  .recetas__header {
+    grid-area: recetas__header; }
+  
+  .recetas__main {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    grid-area: recetas__main;
+
+    & .recetas__primera {
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      transition: all 0.25s;
+
+      & img {
+        width: 100%;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+      }
+
+      &:hover {
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+        -webkit-filter: brightness(70%);
+        filter: brightness(70%);
+      }
+
+      & .recetas__texto-1 {
+        position: relative;
+        top: 80%;
+        font-size: 42px;
+        color: #FFF;
+        text-shadow: 3px 3px 2px #2a312a;
+        font-family: 'Averia Serif Libre', cursive;
+      }
+    }
+
+    .recetas__articulo{
+      img{
+        visibility: hidden;
+      }
+      .recetas__titulo{
+        font-family: 'Averia Serif Libre', cursive;
+        text-align: center;
+        text-decoration: underline;
+        padding-bottom: 80px;
+      }
+    }
+   }
+  
+  .recetas__footer { 
+    grid-area: recetas__footer; }
+  
 
   .container__index {
     display: grid;
