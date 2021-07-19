@@ -656,6 +656,10 @@ section {
   text-decoration: none;
   color: #503106; }
 
+article {
+  display: flex;
+  height: 800px; }
+
 .videosRapidos {
   display: flex;
   flex-direction: row;
@@ -674,7 +678,7 @@ section {
   width: 100%;
   max-width: 1200px;
   height: 430px;
-  display: flex;
+  display: inline-block;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
@@ -707,10 +711,10 @@ section {
     .recomendables__contenedor .recomendables__tarjeta p {
       padding: 0 1rem;
       font-size: 16px;
-      font-weight: 300; }
+      font-weight: 300;
+      text-decoration: none; }
     .recomendables__contenedor .recomendables__tarjeta a {
       font-weight: 500;
-      text-decoration: underline;
       color: #3498db;
       font-family: 'Raleway', sans-serif;
       font-size: 25px; }
@@ -1198,7 +1202,7 @@ footer {
   .container__index {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 270px 220px 900px 2900px 420px;
+    grid-template-rows: 270px 220px 900px 2400px 420px;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "container__header" "container__intro" "container__carousel" "container__article" "container__foot";
@@ -1212,8 +1216,8 @@ footer {
     grid-area: container__intro; }
     .container__intro .lineaDivisora {
       width: 50vw;
-      height: 160px;
-      margin-left: 480px; }
+      height: 170px;
+      margin-left: 590px; }
   .container__carousel {
     padding-top: 50px;
     width: 100vw;
@@ -1221,12 +1225,13 @@ footer {
     .container__carousel .lineaDivisora {
       width: 50vw;
       height: 170px;
-      margin-left: 480px; }
+      margin-left: 590px; }
   .container__article {
-    padding-top: 10vh;
+    padding-top: 25vh;
     grid-area: container__article; }
     .container__article section {
-      display: inline-block; }
+      padding-left: 500px;
+      padding-right: 500px; }
       .container__article section .recomendables__contenedor {
         width: 100%;
         height: 450px;
