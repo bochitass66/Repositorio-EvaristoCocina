@@ -20,7 +20,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #ffffff;
-  background-image: linear-gradient(to top, #ffcfab 0%, #ffefd9 100%); }
+  background-image: linear-gradient(to top, #ffffff 0%, #ffffff 100%); }
 
 /* MOBILE 320px */
 @media only screen and (max-width: 320px) {
@@ -249,7 +249,7 @@ body {
         font-size: 22px;
         color: #FFF;
         text-shadow: 3px 3px 2px #2a312a;
-        font-family: 'Averia Serif Libre', cursive; }
+        font-family: 'Alfa Slab One'; }
     .recetas__main .recetas__segunda img {
       width: 100%;
       -webkit-transition: all 1s ease;
@@ -322,7 +322,7 @@ body {
   .container__index {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 120px 270px 2200px 860px;
+    grid-template-rows: 100px 120px 270px 3500px 860px;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "container__header" "container__intro" "container__carousel" "container__article" "container__foot";
@@ -404,6 +404,9 @@ body {
       padding-left: 55px;
       padding-top: 0;
       padding-bottom: 0; }
+    .container__article article {
+      display: flex;
+      flex-direction: column; }
   .container__foot {
     width: 100vw;
     height: 36rem;
@@ -530,8 +533,8 @@ nav {
   top: 0;
   font-family: 'Montserrat', sans-serif;
   padding: 0 5%;
-  height: 270px;
-  background-color: #524533;
+  height: 280px;
+  background-color: #080808;
   transition: 0.5s; }
 
 nav .logo img {
@@ -563,7 +566,7 @@ nav .links a {
   font-size: 26px;
   font-family: 'Averia Serif Libre';
   font-weight: bold;
-  color: #ffefd9;
+  color: #B59458;
   text-decoration: none; }
 
 #nav-toggle {
@@ -580,7 +583,7 @@ nav .icon-burger {
 nav .icon-burger .line {
   width: 30px;
   height: 5px;
-  background-color: #fff;
+  background-color: #B59458;
   margin: 5px;
   border-radius: 3px;
   transition: all .3s ease-in-out; }
@@ -634,7 +637,7 @@ footer a {
   padding: 2px 25px; }
 
 main p {
-  color: #503106;
+  color: #080808;
   font-family: 'Raleway', sans-serif;
   text-align: center; }
 
@@ -647,7 +650,7 @@ main h2 {
   font-size: 60px;
   font-family: 'Averia Serif Libre';
   text-decoration: underline;
-  color: #503106; }
+  color: #080808; }
 
 section {
   text-align: center;
@@ -657,8 +660,7 @@ section {
   color: #503106; }
 
 article {
-  display: flex;
-  height: 800px; }
+  display: flex; }
 
 .videosRapidos {
   display: flex;
@@ -928,10 +930,10 @@ hr {
   padding-top: 5rem;
   margin-top: 116rem;
   z-index: 2;
-  background-image: linear-gradient(to top, #ffcfab 0%, #ffefd9 100%); }
+  background-image: linear-gradient(to top, #ffffff 0%, #ffffff 100%); }
 
 .contact-us-section .contact-us-area {
-  background-color: #524533;
+  background-color: #080808;
   -moz-clip-path: circle(87.4% at 50% 100%);
   -ms-clip-path: circle(87.4% at 50% 100%);
   -webkit-clip-path: circle(87.4% at 50% 100%);
@@ -963,7 +965,7 @@ hr {
   margin-right: auto; }
 
 .contact-us-section .contact-us-area .contact-form .contact-form-aqua {
-  background-color: #524533;
+  background-color: #080808;
   padding: 2rem 3.125rem 2.5rem; }
 
 .contact-us-section .contact-us-area .contact-form .contact-form-aqua h3 {
@@ -1029,7 +1031,7 @@ hr {
   margin-top: 1.25rem;
   font-size: 1rem;
   color: #FFF;
-  background: #806b4e;
+  background: #B59458;
   font-weight: 600;
   text-transform: uppercase;
   line-height: 2.125;
@@ -1037,7 +1039,7 @@ hr {
 
 .contact-us-section .contact-us-area .contact-form .contact-form-aqua .btn-submit .contact-btn:hover {
   background: #FFF;
-  color: #524533; }
+  color: #080808; }
 
 .contact-us-section {
   margin-top: 7.375rem; }
@@ -1061,7 +1063,7 @@ hr {
   padding: 0 .938rem; }
 
 footer {
-  background-color: #524533;
+  background-color: #080808;
   padding: 90px 0; }
 
 .footer-container {
@@ -1080,7 +1082,7 @@ footer {
   margin: 20px 0; }
 
 .social-media a {
-  color: #e0c7a2;
+  color: #B59458;
   margin-right: 25px;
   font-size: 22px;
   text-decoration: none;
@@ -1119,7 +1121,7 @@ footer {
   padding: 18px 40px;
   font-size: 16px;
   color: #ddd;
-  background: #fc5c65 !important;
+  background: #B59458 !important;
   border: none;
   font-weight: 700;
   outline: none;
@@ -1156,7 +1158,7 @@ footer {
   .recetas__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 270px 1000px 420px;
+    grid-template-rows: 270px 1200px 420px;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "recetas__header recetas__header" "recetas__main recetas__main" "recetas__footer recetas__footer"; }
@@ -1185,18 +1187,18 @@ footer {
         filter: brightness(70%); }
       .recetas__main .recetas__primera .recetas__texto-1, .recetas__main .recetas__segunda .recetas__texto-1, .recetas__main .recetas__tercera .recetas__texto-1, .recetas__main .recetas__cuarta .recetas__texto-1, .recetas__main .recetas__quinta .recetas__texto-1, .recetas__main .recetas__sexta .recetas__texto-1, .recetas__main .recetas__segunda .recetas__texto-2, .recetas__main .recetas__tercera .recetas__texto-3, .recetas__main .recetas__cuarta .recetas__texto-4, .recetas__main .recetas__quinta .recetas__texto-5, .recetas__main .recetas__sexta .recetas__texto-6 {
         position: relative;
-        top: 80%;
+        top: 70%;
         font-size: 42px;
         color: #FFF;
         text-shadow: 3px 3px 2px #2a312a;
-        font-family: 'Averia Serif Libre', cursive; }
-    .recetas__main .recetas__articulo img {
-      visibility: hidden; }
-    .recetas__main .recetas__articulo .recetas__titulo {
-      font-family: 'Averia Serif Libre', cursive;
-      text-align: center;
-      text-decoration: underline;
-      padding-bottom: 80px; }
+        font-family: 'Alfa Slab One'; }
+    .recetas__main .recetas__articulo {
+      display: none; }
+      .recetas__main .recetas__articulo .recetas__titulo {
+        font-family: 'Averia Serif Libre', cursive;
+        text-align: center;
+        text-decoration: underline;
+        padding-bottom: 80px; }
   .recetas__footer {
     grid-area: recetas__footer; }
   .container__index {
