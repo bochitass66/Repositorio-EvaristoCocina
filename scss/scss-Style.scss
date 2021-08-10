@@ -1436,7 +1436,7 @@ footer {
 
   .container__index {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 270px 220px 900px 2400px 420px;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -1464,7 +1464,7 @@ footer {
   }
   .container__carousel{
     padding-top: 50px;
-    width: 100vw;
+    width: 99vw;
     grid-area: container__carousel;
     .lineaDivisora{
       width: 50vw;
@@ -1510,6 +1510,7 @@ footer {
 
 .carousel-item {
   max-height: 85vh;
+  max-width: 100vw;
   overflow: hidden;
   position: relative; }
 
