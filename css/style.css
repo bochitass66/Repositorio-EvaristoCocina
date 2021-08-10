@@ -1208,34 +1208,39 @@ footer {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "container__header" "container__intro" "container__carousel" "container__article" "container__foot";
-    width: 23.2%;
+    width: 99vw;
     height: 90%; }
   .container__header {
-    grid-area: container__header; }
+    grid-area: container__header;
+    width: 99vw; }
+  nav {
+    width: 99vw; }
   .container__intro {
     font-family: 'Averia Serif Libre', cursive;
     padding-top: 100px;
+    width: 99vw;
     grid-area: container__intro; }
     .container__intro .lineaDivisora {
       width: 50vw;
-      height: 170px;
-      margin-left: 590px; }
+      height: 140px;
+      margin-left: 500px; }
   .container__carousel {
     padding-top: 50px;
-    width: 100vw;
+    width: 99vw;
     grid-area: container__carousel; }
     .container__carousel .lineaDivisora {
       width: 50vw;
-      height: 170px;
-      margin-left: 590px; }
+      height: 140px;
+      margin-left: 480px; }
   .container__article {
     padding-top: 25vh;
+    width: 99vw;
     grid-area: container__article; }
     .container__article section {
-      padding-left: 500px;
-      padding-right: 500px; }
+      padding-left: 400px;
+      padding-right: 400px; }
       .container__article section .recomendables__contenedor {
-        width: 100%;
+        width: 100vw;
         height: 450px;
         display: flex;
         flex-direction: row;
@@ -1246,8 +1251,12 @@ footer {
         padding-top: 120px; }
       .container__article section p {
         text-decoration: underline; }
+      .container__article section .lineaDivisora {
+        width: 50vw;
+        height: 140px; }
   .container__foot {
-    grid-area: container__foot; }
+    grid-area: container__foot;
+    width: 99vw; }
   .d-md-block {
     display: block !important; } }
 
