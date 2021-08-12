@@ -1213,8 +1213,6 @@ footer {
   .container__header {
     grid-area: container__header;
     width: 99vw; }
-  nav {
-    width: 99vw; }
   .container__intro {
     font-family: 'Averia Serif Libre', cursive;
     padding-top: 100px;

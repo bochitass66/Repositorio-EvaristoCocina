@@ -1366,6 +1366,7 @@ footer {
 
 @media only screen and (min-width: 690px) {
 
+
   .recetas__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1453,9 +1454,7 @@ footer {
     grid-area: container__header;
     width: 99vw;
   }
-  nav{
-    width: 99vw;
-  }
+ 
   .container__intro{
     font-family: 'Averia Serif Libre', cursive;
     padding-top: 100px;
