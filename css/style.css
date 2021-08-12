@@ -163,7 +163,9 @@ body {
   .video__footer {
     grid-area: video__footer; }
     .video__footer footer {
-      height: 700px; }
+      height: 720px; }
+  .footer footer {
+    height: 500px; }
   /*RECETAS*/
   .recetas__container {
     display: grid;
@@ -187,10 +189,10 @@ body {
     top: 950px;
     position: relative; }
   footer {
-    height: 500px; }
+    height: 780px; }
   .recetas__footer footer {
     width: 100vw;
-    height: 700px; }
+    height: 720px; }
   .recetas__main {
     display: grid;
     grid-template-columns: 1fr;
