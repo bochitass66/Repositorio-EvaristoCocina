@@ -125,7 +125,7 @@ body {
   .container__video {
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 100px 150px 1800px 700px;
+    grid-template-rows: 100px 150px 2000px 690px;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "video__header" "video__intro" "video__main" "video__footer"; }
@@ -187,7 +187,7 @@ body {
     top: 950px;
     position: relative; }
   footer {
-    height: 800px; }
+    height: 500px; }
   .recetas__footer footer {
     width: 100vw;
     height: 700px; }
